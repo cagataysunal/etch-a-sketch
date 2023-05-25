@@ -1,16 +1,30 @@
 .row {
-	display: flex;
-	height: 50px;
-	border-style: solid;
-	border-width: thin;
+    display: flex;
+    height: 50px;
+}
+
+#container {
+    text-align: center;
+}
+
+#canvas {
+    margin: auto;
+    margin-top: 20px;
+    width: 800px;
+    height: 800px;
+    border-style: solid;
+    border-width: thin;
+}
+
+#reset-canvas {
+    height: 40px;
+    width: 80px; 
 }
 
 .col {
-	flex: 1;
-	border-style: solid;
-	border-width: thin;
+    flex: 1;
 }
 
 .drawn {
-	background-color: grey;
+    background-color: grey;
 }
