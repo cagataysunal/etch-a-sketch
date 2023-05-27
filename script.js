@@ -33,7 +33,10 @@ createBox(16);
 const boxButton = document.querySelector("#reset-canvas");
 
 boxButton.addEventListener("click", function(e) {
-    let number = +prompt("How many squares per side?");
+    let squareNumber = +prompt("How many squares per side?");
+    if (squareNumber == null) {
+        return;
+    }
     number = number > 100 ? 100 : number;
     createBox(number);
 });
